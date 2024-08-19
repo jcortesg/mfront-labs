@@ -1,0 +1,21 @@
+version: '3'
+services:
+  container:
+    build: ./container
+    ports:
+      - "8080:8080"
+  
+  users:
+    build: ./users
+    ports:
+      - "3001:3000"
+
+  tasks:
+    build: ./tasks
+    ports:
+      - "3002:3000"
+
+  reports:
+    build: ./reports
+    ports:
+      - "3003:3000"
