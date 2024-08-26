@@ -21,6 +21,13 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/, // para manejar archivos CSS
+        use: [
+          "style-loader", // Inserta CSS en el DOM
+          "css-loader", // Interpreta las @import y url()
+        ],
+      },
     ],
   },
   plugins: [
