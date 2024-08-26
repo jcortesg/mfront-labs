@@ -1,10 +1,10 @@
 import React from "react";
-import TaskView from "./components/TaskView";
+import TaskList from "./components/TaskList";
 
 function App() {
   return (
     <div>
-      <TaskView />
+      <TaskList />
     </div>
   );
 }
